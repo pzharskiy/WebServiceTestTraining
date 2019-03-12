@@ -16,7 +16,7 @@ public class RestAssuredDemoTest {
 	public void initTest() {
 		RestAssured.baseURI = "http://jsonplaceholder.typicode.com";
 	}
-	
+
 	@Test
 	public void checkStatusCode() {
 		Response response = RestAssured.when()
