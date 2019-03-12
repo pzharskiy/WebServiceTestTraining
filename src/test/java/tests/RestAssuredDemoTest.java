@@ -30,7 +30,6 @@ public class RestAssuredDemoTest {
 		Response reponse = RestAssured.when()
 											.get("/posts")
 										.andReturn();
-
 		String rpContentTypeHeader = reponse.getHeader("Content-Type");
 		Assert.assertEquals(rpContentTypeHeader, "application/json; charset=utf-8");
 	}
@@ -39,7 +38,6 @@ public class RestAssuredDemoTest {
 	public void checkResponseBody() {
 		Response reponse = RestAssured.when()
 									.get("/posts")
-									
 								.andReturn();
 		ResponseBody<?> responseBody = reponse.getBody();
 		Post[] posts = responseBody.as(Post[].class);
