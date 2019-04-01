@@ -45,10 +45,12 @@ public class RestAssuredDemoTest {
 
 		for (User userItem: users
 			 ) {
-			System.out.println(userItem.getId() + "---" + userItem.getName() + " ---" +
-					userItem.getUsername() + "---"+userItem.getPhone());
+			System.out.println(userItem.getId() + " --- " + userItem.getName() + " --- " +
+					userItem.getUsername() + " --- "+userItem.getPhone());
 		}
 
 	}
-	
+
+
+
 }
